@@ -5,7 +5,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <script src="js/english.js"> </script>
-
+        <audio id="audio_correct" src="https://soundsunderknown.s3.us-east-2.amazonaws.com/pmd_correct.mp3"></audio>
+        <audio id="audio_incorrect" src="https://soundsunderknown.s3.us-east-2.amazonaws.com/pmd_incorrect.mp3"></audio>
+        <audio id="audio_none" src="https://soundsunderknown.s3.us-east-2.amazonaws.com/pmd_none.mp3"></audio>
 
         <!-- Bootstrap Tags -->
         <link rel="stylesheet" href="css/main.css">
@@ -13,7 +15,7 @@
     </head>
 
     <body class = "English-Youssef">
-        <h1 class = "Head-Title">English Section <img src="images/pencil.gif"/> </h1>
+        <h1 class = "Head-Title">English Section <img src="https://soundsunderknown.s3.us-east-2.amazonaws.com/pencil.gif"/> </h1>
         <br>
         <div class = "Word-Mult-Choice">
             <div class = "FirstDirections">
@@ -22,13 +24,23 @@
             <br>
                 <section class = "Word-Question1">
                     <header>1. Which of the following is a noun?</header>
-                    <form>
+                    <form name = "word-Q1" form id = "Q1">
                     <p><input type = "radio" name = "question1" value = "Throwing">A. Throwing</p>
                     <p><input type = "radio" name = "question1" value = "Happy">B. Happy</p>
                     <p><input type = "radio" name = "question1" value = "Flower">C. Flower</p>
                     <p><input type = "radio" name = "question1" value = "Sleeping">D. Sleeping</p>
                     </form> 
-                    <button onclick="submitAnswer_Q1()" class = "FirstSectionSubmit" button style="margin: 15px;">Submit Answer</button>
+                    <button onclick="submitAnswer_Q1();" class = "FirstSectionSubmit" button style="margin: 15px;">Submit Answer</button>
+
+                    <div id="QUESTION-VALIDATE-Q1" style=
+                      "color:green; font-size:18px; font-weight:bold;">
+                    </div>
+                    <div id="QUESTION-VALIDATE-WRONG-Q1" style=
+                      "color:rgb(255, 0, 0); font-size:18px; font-weight:bold;">
+                    </div>
+                    <div id="QUESTION-NONE-Q1" style=
+                      "color:rgb(0, 162, 255); font-size:18px; font-weight:bold;">
+                    </div>
                     </section>
                     </p>
                 
@@ -41,6 +53,16 @@
                     <p><input type = "radio" name = "question2" value = "Kind">Kind</p>
                     </form>
                     <button onclick="submitAnswer_Q2()" class = "FirstSectionSubmit" button style="margin: 15px;">Submit Answer</button>
+                    <div id="QUESTION-VALIDATE-Q2" style=
+                      "color:green; font-size:18px; font-weight:bold;">
+                    </div>
+                    <div id="QUESTION-VALIDATE-Wrong-Q2" style=
+                      "color:rgb(255, 0, 0); font-size:18px; font-weight:bold;">
+                    </div>
+                    <div id="QUESTION-NONE-Q2" style=
+                      "color:rgb(0, 162, 255); font-size:18px; font-weight:bold;">
+                    </div>
+                    
                 </section>
         </div>    
         
@@ -59,6 +81,15 @@
                     <p><input type = "radio" name = "question3" value = "Bored">Bored</p>
                     </form>
                     <button onclick="submitAnswer_Q3()" class="SecondSectionSubmit" button style="margin: 15px;">Submit Answer</button>
+                    <div id="QUESTION-VALIDATE-Q3" style=
+                      "color:green; font-size:18px; font-weight:bold;">
+                    </div>
+                    <div id="QUESTION-VALIDATE-Wrong-Q3" style=
+                      "color:rgb(255, 0, 0); font-size:18px; font-weight:bold;">
+                    </div>
+                    <div id="QUESTION-NONE-Q3" style=
+                      "color:rgb(0, 162, 255); font-size:18px; font-weight:bold;">
+                    </div>
             </section>  
                 
             <section class = "Fill-In-Question2">
@@ -69,7 +100,27 @@
                     <p><input type = "radio" name = "question4" value = "Water Bottle">Water Bottle</p>
                     </form>
                     <button onclick="submitAnswer_Q4()" class="SecondSectionSubmit" button style="margin: 15px;">Submit Answer</button>
+                    <div id="QUESTION-VALIDATE-Q4" style=
+                      "color:green; font-size:18px; font-weight:bold;">
+                    </div>
+                    <div id="QUESTION-VALIDATE-Wrong-Q4" style=
+                      "color:rgb(255, 0, 0); font-size:18px; font-weight:bold;">
+                    </div>
+                    <div id="QUESTION-NONE-Q4" style=
+                      "color:rgb(0, 162, 255); font-size:18px; font-weight:bold;">
+                    </div>
             </section>
         </div>
+        
+        <br>
+        
+        <div class = "Word-Pic-Questions">
+            <div class = "ThirdDirections">
+              <header>For the following questions, choose the part of speech that corresponds to the image.</header>
+            </div>
+            <br>
+            <section class = "Word-Pic-Question1">
+              <img src = "https://soundsunderknown.s3.us-east-2.amazonaws.com/basketball.jpg" class = "Basketball"> 
+
     </body>
 </html>
