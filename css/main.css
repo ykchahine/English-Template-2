@@ -25,13 +25,16 @@
 
 .Word-Question1 {
     margin-left: 20px;
+    font-family: "Comic Sans MS", "Comic Sans";
 }
 
 .Word-Question2 {
     margin-left: 20px;
+    font-family: "Comic Sans MS", "Comic Sans";
 }
 
 .FirstDirections {
+    font-family: "Comic Sans MS", "Comic Sans";
     background-color: lightgoldenrodyellow;
     font-style: oblique;
     font-weight: 600;
@@ -41,7 +44,18 @@
 }
 
 .SecondDirections {
+    font-family: "Comic Sans MS", "Comic Sans";
     background-color:rgb(255, 204, 240);
+    font-style: oblique;
+    font-weight: 600;
+    margin-left: 10px
+
+
+}
+
+.ThirdDirections {
+    font-family: "Comic Sans MS", "Comic Sans";
+    background-color:rgb(220, 255, 204);
     font-style: oblique;
     font-weight: 600;
     margin-left: 10px
@@ -57,13 +71,25 @@
 
 
 .Fill-In-Question1 {
+   font-family: "Comic Sans MS", "Comic Sans";
    margin-left: 20px;
 
 }
 
 .Fill-In-Question2 {
+    font-family: "Comic Sans MS", "Comic Sans";
     margin-left: 20px;
  
+ }
+
+.Word-Pic-Questions{
+    background-color:rgb(220, 255, 204);
+ 
+ }
+
+.Basketball{
+   width: 200px;
+   height: 200px;
  }
 
 .text-center {
