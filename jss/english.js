@@ -82,7 +82,7 @@ var submitAnswer_Q3 = function() {
     }
 };
 
-  var submitAnswer_Q4 = function() {
+var submitAnswer_Q4 = function() {
 
     var radios = document.getElementsByName('question4');
     var val= "";
@@ -111,6 +111,101 @@ var submitAnswer_Q3 = function() {
     }
 };
 
+var submitAnswer_Q5 = function() {
+
+  var radios = document.getElementsByName('question5');
+  var val= "";
+  for (var i = 0, length = radios.length; i < length; i++) {
+      if (radios[i].checked) {
+         val = radios[i].value;
+         break;
+       }
+  }
+  
+  if ( val == "Noun" ) {
+    document.getElementById("QUESTION-VALIDATE-Q5").innerHTML = "Correct! Awesome job!";
+    var audio = document.getElementById("audio_correct");
+    audio.play();
+  } 
+  else if (val == "" ) {
+    document.getElementById("QUESTION-NONE-Q5").innerHTML = "Oops! Please choose an answer!";
+    var audio = document.getElementById("audio_none");
+    audio.play();
+  } 
+  else {
+    document.getElementById("QUESTION-VALIDATE-Wrong-Q5").innerHTML = "Incorrect! Try again!";
+    var audio = document.getElementById("audio_incorrect");
+    audio.play();
+
+  }
+};
+
+var submitAnswer_Q6 = function() {
+
+  var radios = document.getElementsByName('question6');
+  var val= "";
+  for (var i = 0, length = radios.length; i < length; i++) {
+      if (radios[i].checked) {
+         val = radios[i].value;
+         break;
+       }
+  }
+  
+  if ( val == "Verb" ) {
+    document.getElementById("QUESTION-VALIDATE-Q6").innerHTML = "Correct! Awesome job!";
+    var audio = document.getElementById("audio_correct");
+    audio.play();
+  } 
+  else if (val == "" ) {
+    document.getElementById("QUESTION-NONE-Q6").innerHTML = "Oops! Please choose an answer!";
+    var audio = document.getElementById("audio_none");
+    audio.play();
+  } 
+  else {
+    document.getElementById("QUESTION-VALIDATE-Wrong-Q6").innerHTML = "Incorrect! Try again!";
+    var audio = document.getElementById("audio_incorrect");
+    audio.play();
+
+  }
+};
+
+var submitAnswer_Q7 = function() {
+  var val = document.forms["myForm"]["answer"].value;
+  if ( val == "Nickel" ) {
+    document.getElementById("QUESTION-VALIDATE-Q7").innerHTML = "Correct! Awesome job!";
+    var audio = document.getElementById("audio_correct");
+    audio.play();
+  } 
+  else if (val == "" ) {
+    document.getElementById("QUESTION-NONE-Q7").innerHTML = "Oops! Please type an answer!";
+    var audio = document.getElementById("audio_none");
+    audio.play();
+  } 
+  else {
+    document.getElementById("QUESTION-VALIDATE-Wrong-Q7").innerHTML = "Incorrect! Try again!";
+    var audio = document.getElementById("audio_incorrect");
+    audio.play();
+  }
+}
+
+var submitAnswer_Q8 = function() {
+  var val = document.forms["myForm_2"]["answer"].value;
+  if ( val == "Lamb" ) {
+    document.getElementById("QUESTION-VALIDATE-Q8").innerHTML = "Correct! Awesome job!";
+    var audio = document.getElementById("audio_correct");
+    audio.play();
+  } 
+  else if (val == "" ) {
+    document.getElementById("QUESTION-NONE-Q8").innerHTML = "Oops! Please type an answer!";
+    var audio = document.getElementById("audio_none");
+    audio.play();
+  } 
+  else {
+    document.getElementById("QUESTION-VALIDATE-Wrong-Q8").innerHTML = "Incorrect! Try again!";
+    var audio = document.getElementById("audio_incorrect");
+    audio.play();
+  }
+}
 //function submitForm() {
   // Get the first form with the name
   // Usually the form name is not repeated
