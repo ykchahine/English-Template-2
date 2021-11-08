@@ -19,6 +19,12 @@
   margin-right: 2px;
 }
 
+.good-job{
+    display: none;
+
+}
+
+
 .Word-Mult-Choice {
     background-color:lightgoldenrodyellow;
 }
@@ -63,6 +69,16 @@
 
 }
 
+.FourthDirections {
+    font-family: "Comic Sans MS", "Comic Sans";
+    background-color:rgb(255, 203, 203);
+    font-style: oblique;
+    font-weight: 600;
+    margin-left: 10px
+
+
+}
+
 .Fill-In-Questions {
 
     background-color:rgb(255, 204, 240);
@@ -87,11 +103,86 @@
  
  }
 
+.Word-Pic-Question1{
+    font-family: "Comic Sans MS", "Comic Sans";
+    margin-left: 20px;
+}
+
+.Word-Pic-Question2{
+    font-family: "Comic Sans MS", "Comic Sans";
+    margin-left: 20px;
+}
+
+.Word-Box-Questions{
+    background-color:rgb(255, 203, 203);
+}
+
+.Trifecta{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 41pt;
+
+}
+
+.Word-Box-Question1{
+    font-family: "Comic Sans MS", "Comic Sans";
+    margin-left: 20px;
+}
+
+.Word-Box-Question2{
+    font-family: "Comic Sans MS", "Comic Sans";
+    margin-left: 20px;
+}
 .Basketball{
-   width: 200px;
-   height: 200px;
+    width: 200px;
+    height: 200px;
+    margin-left: 300px;
+    margin-top: 40px;
+    transition: transform .2s;
+
  }
 
+.Basketball:hover{
+
+    transform: scale(1.5);
+}
+
+.Walking{
+    width: 200px;
+    height: 200px;
+    margin-left: 200px;
+    margin-top: 40px;
+    transition: transform .2s;
+ }
+
+ .Walking:hover{
+     transform: scale(1.5);
+ }
+
+ .Nickel{
+    width: 300px;
+    height: 300px;
+    margin-left: 215px;
+    margin-top: 100px;
+    transition: transform .2s;
+
+}
+
+.Nickel:hover{
+    transform: scale(1.5);
+}
+
+.Lamb{
+    width: 300px;
+    height: 300px;
+    margin-left: 215px;
+    margin-top: 60px;
+    transition: transform .2s;
+
+}
+
+.Lamb:hover{
+    transform: scale(1.5);
+}
 .text-center {
     text-align: justify;
   }
@@ -104,6 +195,13 @@
 }
 
 .SecondSectionSubmit{
+    border-color: black;
+    border-radius: 15px;
+    background-color:lightskyblue;
+
+}
+
+.ThirdSectionSubmit{
     border-color: black;
     border-radius: 15px;
     background-color:lightskyblue;
